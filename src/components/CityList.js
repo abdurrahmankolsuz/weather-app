@@ -19,7 +19,7 @@ const CityList = ({ city }) => {
     );
   }
   else {
-    return <div className="no-results">No city found</div>;
+    return <div class="alert alert-danger" role="alert">No city found!</div>;
   }
 };
 

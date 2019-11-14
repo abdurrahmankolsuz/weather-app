@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Header = props => (
-  <header className="header">
+  <nav className="navbar navbar-light bg-dark">
     <h1 className="header-title">{props.title}</h1>
-  </header>
+  </nav>
 );
 
 export default Header;

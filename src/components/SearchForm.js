@@ -36,13 +36,7 @@ class SearchForm extends Component {
             value={this.state.searchText}
             onChange={this.handleSearchTextChange}
           />
-          <input
-            type="submit"
-            name="city-search-btn"
-            className="city-search__btn"
-            id="city-search-btn"
-            value="Search"
-          />
+          <button type="submit" className="btn btn-dark">Search</button>
         </form>
       </div>
     );

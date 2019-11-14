@@ -1,12 +1,4 @@
-.no-results {
-	background-color: tomato;
-	color: #fff;
-	display: block;
-	font-size: 16px;
-	padding: 16px;
-	text-align: center;
-	width: 100%;
-}
+
 
 .city-link {
 	background-color: #76a097;
@@ -87,16 +79,10 @@ forecast {
 	padding: 0 4px;
 }
 
-.header {
-	background-color: #f7b18e;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-}
-
 .header-title {
 	font-size: 18px;
 	text-transform: uppercase;
+	color: #fff;
 }
 
 .header-search {
@@ -117,23 +103,5 @@ forecast {
 	flex-grow: 1;
 }
 
-.city-search__input:focus {
-	border-color: #e08d63;
-	outline: none;
-}
 
-.city-search__btn {
-	background: tomato;
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	font-size: 14px;
-	line-height: 1;
-	outline: none;
-	padding: 8px 16px;
-	text-transform: uppercase;
-}
 
-.city-search__btn:hover {
-	background-color: #e02200;
-}
