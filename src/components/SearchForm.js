@@ -8,6 +8,7 @@ class SearchForm extends Component {
     };
     this.handleSearchTextChange = this.handleSearchTextChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.inputRef = React.createRef();
   }
   handleSearchTextChange(event) {
     this.setState({
@@ -18,6 +19,9 @@ class SearchForm extends Component {
     e.preventDefault();
     const searchValue = this.state.searchText;
     this.props.onSearch(searchValue);
+  }
+  componentDidMount(){
+    this.inputRef.current.focus();
   }
   render() {
     return (
@@ -35,6 +39,8 @@ class SearchForm extends Component {
             id="city-search"
             value={this.state.searchText}
             onChange={this.handleSearchTextChange}
+            ref= {this.inputRef}
+            placeholder="search city.."
           />
           <button type="submit" className="btn btn-dark">Search</button>
         </form>

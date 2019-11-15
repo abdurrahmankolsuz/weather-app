@@ -4,12 +4,12 @@ import DayWeatherInfo from './DayWeatherInfo';
 const WeatherForecast = ({weather}) => {
   if (weather) {
     return (
-      <section className="weather-info">
+      <ul class="list-group">
         { weather.map( (weatherDetail) => {
             return <DayWeatherInfo key={weatherDetail.id} info={weatherDetail} />;
           })
         }
-      </section>
+      </ul>
     )
   }
   else {

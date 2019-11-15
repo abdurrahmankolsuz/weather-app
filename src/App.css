@@ -22,7 +22,7 @@
 	transform: translateY(2px);
 }
 
-forecast {
+.forecast {
 	display: flex;
 	flex-direction: row;
 	padding: 12px 20px;
