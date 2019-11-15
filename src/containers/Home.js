@@ -1,4 +1,4 @@
-import React, { Component ,PropTypes} from 'react';
+import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import { citySearchAction } from '../actions';
 import Header from '../components/Header';
@@ -25,7 +25,6 @@ export class Home extends Component {
             </section>;
   }
 }
-
 
 const mapStateToProps = (state) => {
   return {
